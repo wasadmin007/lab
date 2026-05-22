@@ -1,0 +1,23 @@
+:root {
+  --azure-blue: #0078d4;
+  --azure-blue-dark: #005a9e;
+  --surface: #f3f4f6;
+  --border: #e1e4e8;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--surface);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}

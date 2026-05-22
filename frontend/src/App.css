@@ -1,0 +1,24 @@
+.app-header {
+  background: var(--azure-blue);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.header-inner h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.header-inner p {
+  font-size: 0.85rem;
+  opacity: 0.82;
+  margin-top: 0.3rem;
+}
+
+.app-main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}

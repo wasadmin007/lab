@@ -1,0 +1,12 @@
+project_name            = "empportal"
+environment             = "dev"
+location                = "eastus2"
+cosmos_throughput       = 400
+static_web_app_sku_tier = "Standard"
+
+tags = {
+  project     = "employee-portal"
+  managed_by  = "terraform"
+  owner       = "platform-team"
+  cost_center = "engineering"
+}

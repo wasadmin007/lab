@@ -1,0 +1,33 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
+crash.log
+
+# tfvars contain environment-specific values; use .example files instead
+*.tfvars
+!*.tfvars.example
+
+# Node / TypeScript
+node_modules/
+dist/
+build/
+
+# Frontend env files (contain deployed URLs)
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Backend local settings (contain dev connection strings)
+backend/local.settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp

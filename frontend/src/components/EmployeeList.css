@@ -1,0 +1,139 @@
+.employee-section {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+/* ── Controls bar ───────────────────────────────────────────────────────── */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: #fafafa;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-input:focus {
+  border-color: var(--azure-blue);
+  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.18);
+}
+
+.count {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ── Table ──────────────────────────────────────────────────────────────── */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.employee-table th {
+  background: #f0f2f5;
+  text-align: left;
+  padding: 0.7rem 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border);
+}
+
+.employee-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-table tbody tr:hover {
+  background: #f0f7ff;
+}
+
+.row-num {
+  color: var(--text-secondary);
+  width: 2.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.emp-name {
+  font-weight: 500;
+}
+
+.dept-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: var(--azure-blue-dark);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ── States ─────────────────────────────────────────────────────────────── */
+.state-box {
+  text-align: center;
+  padding: 3.5rem 1rem;
+  color: var(--text-secondary);
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.state-box.error {
+  color: #b91c1c;
+  background: #fff5f5;
+  border-color: #fecaca;
+}
+
+.error-detail {
+  font-size: 0.82rem;
+  margin-top: 0.4rem;
+  opacity: 0.75;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 2.5rem;
+}
+
+/* ── Spinner ────────────────────────────────────────────────────────────── */
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--azure-blue);
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
